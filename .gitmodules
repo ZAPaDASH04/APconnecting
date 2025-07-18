@@ -1,0 +1,6 @@
+[submodule "inc/apclientpp"]
+	path = inc/apclientpp
+	url = https://github.com/black-sliver/apclientpp.git
+[submodule "inc/wswrap"]
+	path = inc/wswrap
+	url = https://github.com/black-sliver/wswrap.git
