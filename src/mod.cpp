@@ -17,31 +17,14 @@
 #endif
 
 
-void main() {
 
+int main() {
     // FILE* fp;
     // if (freopen_s(&fp, "a.txt", "a", stdout) != 0) {
     //     std::cerr << "Failed to redirect stdout\n";
     //     return 1;
     // }
-
-    std::cout << "hello world" << std::endl;
-    std::cerr << "error world" << std::endl;
-    printf("does this work\n");
     std::cout << "ThreadProc started" << std::endl;
-
-    // DWORD BASE_ADDR;// = (DWORD)GetModuleHandle(nullptr);
-    
-    // while ((BASE_ADDR = (DWORD)GetModuleHandle(nullptr)) == 0) {
-    //     Sleep(50);
-    // }
-
-    // // Wait for LEGOBatman.exe to load.
-    // HMODULE hModule = nullptr;
-    // while (hModule == nullptr) {
-    //     hModule = GetModuleHandleA("LEGOBatman.exe"); // use your exe's real name here
-    //     Sleep(50);
-    // }
     
 
     /*////////////////////////////////
@@ -84,6 +67,8 @@ void main() {
         counter++;
         if(counter == 100) break;
     }
+
+
     ap->set_socket_connected_handler([]() {
 		});
 	ap->set_socket_disconnected_handler([]() {
@@ -109,7 +94,7 @@ void main() {
 
 
     std::cout << "About to loop." << std::endl;
-    file.close(); // close file before infinite loop.
+    //file.close(); // close file before infinite loop.
     while (true) {
 
         // AP STUFF
@@ -121,6 +106,6 @@ void main() {
     }
 
     // Never reached but good practice
-    FreeLibraryAndExitThread(hSelf, 0);
+    //FreeLibraryAndExitThread(hSelf, 0);
     return 0;
 }
