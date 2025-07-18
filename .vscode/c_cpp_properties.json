@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/inc/apclientpp/**",
+                "${workspaceFolder}/inc/asio/include/**",
+                "${workspaceFolder}/inc/websocketpp/**",
+                "${workspaceFolder}/inc/wswrap/include/**",
+                "${workspaceFolder}/inc/json/include/**",
+                "${workspaceFolder}/inc/openssl/include/**",
+                "${workspaceFolder}/inc/valijson/include/**",
+                "${workspaceFolder}/inc/zlib/include/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/msys64/mingw32/bin/i686-w64-mingw32-g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                "-DASIO_STANDALONE",
+                "-DAPCLIENT_DEBUG",
+                "-DWSWRAP_SEND_EXCEPTIONS"
+                //"-D_WEBSOCKETPP_CPP11_THREAD_"
+            ]
+        }
+    ],
+    "version": 4
+}
