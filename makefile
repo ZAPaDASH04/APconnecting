@@ -2,7 +2,7 @@
 PROGRAM_NAME = ap.exe # lb1mod.dll
 
 # Compiler
-CXX = i686-w64-mingw32-g++ -m32 -DASIO_STANDALONE -DAPCLIENT_DEBUG -DWSWRAP_SEND_EXCEPTIONS -Wno-deprecated-declarations -D_WEBSOCKETPP_MINGW_THREAD_
+CXX = i686-w64-mingw32-g++ -m32 -DASIO_STANDALONE -DAPCLIENT_DEBUG -DWSWRAP_SEND_EXCEPTIONS -Wno-deprecated-declarations -D_WEBSOCKETPP_CPP11_THREAD_
 
 # Directories
 SRC_DIR = ./src
