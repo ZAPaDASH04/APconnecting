@@ -99,7 +99,7 @@ int main() {
 
         // AP STUFF
 
-
+        // keeps the console open.
 
 
         Sleep(500);

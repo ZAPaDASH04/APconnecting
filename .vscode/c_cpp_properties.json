@@ -27,7 +27,7 @@
                 "-DASIO_STANDALONE",
                 "-DAPCLIENT_DEBUG",
                 "-DWSWRAP_SEND_EXCEPTIONS",
-                "-D_WEBSOCKETPP_CPP11_THREAD_" // I do not like this :(
+                "-D_WEBSOCKETPP_MINGW_THREAD_" // I do not like this :(
             ]
         }
     ],

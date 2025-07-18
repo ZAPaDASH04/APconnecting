@@ -1,0 +1,4 @@
+On the following lines, please enter the Server URL, Server Port, Player Name, & Password like so. If there is no password, please delete the line.
+archipelago.gg
+53514
+Player1
