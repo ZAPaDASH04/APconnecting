@@ -47,7 +47,7 @@ int main() {
     std::ifstream connectionFile("APConnect.txt");
 
     if(!connectionFile){
-        std::cerr << "Error opening Connection File" << std::endl;
+        std::cerr << "Error Opening Connection File" << std::endl;
         return -1;
     }
 
