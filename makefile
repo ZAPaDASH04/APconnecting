@@ -11,7 +11,7 @@ OBJ_DIR = ./obj
 DEP_DIR = ./obj
 RELEASE_DIR = ./
 INCLUDE_DIR = inc
-LIBS = -lws2_32 -APCpp.lib
+LIBS = -lws2_32 -LAPCpp
 INCLUDES = \
 	-Iinc/APCpp
 # Bools
@@ -64,7 +64,7 @@ $(BIN_DIR) $(OBJ_DIR) $(RELEASE_DIR):
 
 # Clean rule
 clean:
-	rm -rf $(OBJ_DIR)/*.o $(OBJ_DIR)/*.d $(BIN_DIR)/${PROGRAM_NAME} $(RELEASE_DIR)/${PROGRAM_NAME}
+	rm -rf $(OBJ_DIR)/*.o $(OBJ_DIR)/*.d $(BIN_DIR)/${PROGRAM_NAME} $(RELEASE_DIR)/${PROGRAM_NAME} ./inc/APCpp/APCpp.dll ./inc/APCpp/APCpp.h
 
 # Remove orphaned .o files (ones not matching known sources)
 clean_unused:
