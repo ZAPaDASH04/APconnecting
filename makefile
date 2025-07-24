@@ -44,10 +44,13 @@ EXECUTABLE = $(FINAL_DIR)/$(PROGRAM_NAME)
 # Default rule
 all: clean_unused $(EXECUTABLE)
 
+APCPP_LIB:=inc/APCpp/libAPCpp
+APCPP_LIB:=$(APCPP_LIB).dll
+
 # Linking
 $(EXECUTABLE): $(OBJ_FILES) | $(BIN_DIR) $(RELEASE_DIR)
 	@echo "linking."
-	$(CXX) $(OBJ_FILES) -o $(EXECUTABLE) $(LIBS)
+	$(CXX) $(OBJ_FILES) -o $(EXECUTABLE) $(LIBS) $(APCPP_LIB)
 
 # Compilation rule with dependency generation
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
@@ -64,7 +67,7 @@ $(BIN_DIR) $(OBJ_DIR) $(RELEASE_DIR):
 
 # Clean rule
 clean:
-	rm -rf $(OBJ_DIR)/*.o $(OBJ_DIR)/*.d $(BIN_DIR)/${PROGRAM_NAME} $(RELEASE_DIR)/${PROGRAM_NAME} ./inc/APCpp/APCpp.dll ./inc/APCpp/APCpp.h
+	rm -rf $(OBJ_DIR)/*.o $(OBJ_DIR)/*.d $(BIN_DIR)/${PROGRAM_NAME} $(RELEASE_DIR)/${PROGRAM_NAME} $(APCPP_LIB)
 
 # Remove orphaned .o files (ones not matching known sources)
 clean_unused:
