@@ -8,5 +8,8 @@
 int main() {
     std::cout << "Attempting initial connect" << std::endl;
     AP_Init("archipelago.gg:34565", "Manual_LegoBatmanTheVideoGame_SnolidIce", "Player1","");
+    
+    AP_Start();
+    while(true){};
     return 0;
 }
